@@ -1,0 +1,39 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    l.s.y.randomCardBattle: DEBUG
+
+spring:
+  profiles:
+    active:
+      - local
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - local
+  datasource:
+    url: jdbc:postgresql://localhost:15432/randomcardbattle
+    username: rcbuser
+    password: rcbUser
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - dev
