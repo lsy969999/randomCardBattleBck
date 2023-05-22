@@ -1,9 +1,9 @@
-package l.s.y.randomCardBattle.sample.mvc.repository;
+package l.s.y.randomCardBattle._sample.mvc.repository;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import l.s.y.randomCardBattle.sample.domain.entity.Sample;
+import l.s.y.randomCardBattle._sample.domain.entity.Sample;
 import lombok.RequiredArgsConstructor;
-import static l.s.y.randomCardBattle.sample.domain.entity.QSample.sample;
+import static l.s.y.randomCardBattle._sample.domain.entity.QSample.sample;
 
 import java.util.List;
 

@@ -1,17 +1,14 @@
-package l.s.y.randomCardBattle.sample;
+package l.s.y.randomCardBattle._sample;
 
 
-import jakarta.transaction.Transactional;
-import l.s.y.randomCardBattle.sample.domain.entity.QSample;
-import l.s.y.randomCardBattle.sample.domain.entity.Sample;
-import l.s.y.randomCardBattle.sample.domain.entity.SampleEnum;
-import l.s.y.randomCardBattle.sample.mvc.repository.SampleRepository;
-import l.s.y.randomCardBattle.sample.mvc.repository.SampleRepositoryImpl;
+import l.s.y.randomCardBattle._sample.domain.entity.Sample;
+import l.s.y.randomCardBattle._sample.domain.entity.SampleEnum;
+import l.s.y.randomCardBattle._sample.mvc.repository.SampleRepository;
+import l.s.y.randomCardBattle._sample.mvc.repository.SampleRepositoryImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 
 import java.util.List;
 

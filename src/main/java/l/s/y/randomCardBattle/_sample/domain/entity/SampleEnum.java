@@ -1,4 +1,4 @@
-package l.s.y.randomCardBattle.sample.domain.entity;
+package l.s.y.randomCardBattle._sample.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

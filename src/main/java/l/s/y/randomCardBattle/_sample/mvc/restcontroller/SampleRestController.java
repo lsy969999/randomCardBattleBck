@@ -1,4 +1,4 @@
-package l.s.y.randomCardBattle.sample.mvc.restcontroller;
+package l.s.y.randomCardBattle._sample.mvc.restcontroller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

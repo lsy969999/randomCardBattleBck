@@ -1,4 +1,4 @@
-package l.s.y.randomCardBattle.sample.domain.entity;
+package l.s.y.randomCardBattle._sample.domain.entity;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
