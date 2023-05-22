@@ -9,6 +9,9 @@ spring:
   profiles:
     active:
       - local
+  thymeleaf:
+    suffix: .html
+    cache: false
 ---
 spring:
   config:
@@ -31,7 +34,9 @@ spring:
     host: localhost
     port: 6379
     password: 123456
-
+jasypt:
+  encryptor:
+    password: 123456
 ---
 spring:
   config:
