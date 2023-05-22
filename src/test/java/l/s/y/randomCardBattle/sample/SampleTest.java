@@ -4,6 +4,7 @@ package l.s.y.randomCardBattle.sample;
 import jakarta.transaction.Transactional;
 import l.s.y.randomCardBattle.sample.domain.entity.QSample;
 import l.s.y.randomCardBattle.sample.domain.entity.Sample;
+import l.s.y.randomCardBattle.sample.domain.entity.SampleEnum;
 import l.s.y.randomCardBattle.sample.mvc.repository.SampleRepository;
 import l.s.y.randomCardBattle.sample.mvc.repository.SampleRepositoryImpl;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +17,7 @@ import java.util.List;
 
 @SpringBootTest
 @Slf4j
-@Transactional
+//@Transactional
 public class SampleTest {
 
     @Autowired private SampleRepository sampleRepository;
@@ -35,7 +36,10 @@ public class SampleTest {
 
     @Test
     public void saveSample(){
-        Sample test1 = Sample.builder().sampleName("hi im sample Name").build();
+        Sample test1 = Sample.builder()
+                .sampleName("hi im sample Name")
+                .sampleEnum(SampleEnum.SAMPLE2)
+                .build();
         Sample end = sampleRepository.save(test1);
         log.debug("end={}", end);
     }

@@ -19,9 +19,14 @@ public class Sample extends BaseTime{
     @Column(name = "SAMPLE_NAME")
     private String sampleName;
 
+    @Convert(converter = SampleEnumConverter.class)
+    @Column(name = "SAMPLE_ENUM")
+    private SampleEnum sampleEnum;
+
     @Builder
-    public Sample(String sampleName){
+    public Sample(String sampleName, SampleEnum sampleEnum){
         this.sampleName = sampleName;
+        this.sampleEnum = sampleEnum;
     }
 
 }
