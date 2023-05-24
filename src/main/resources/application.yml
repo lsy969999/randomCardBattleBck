@@ -40,6 +40,17 @@ spring:
 #      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 #    consumer:
 #      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/RandomCardBattle
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+jwt:
+  auth:
+    converter:
+      resource-id: random-card-battle
+      principal-attribute: preferred_username
 jasypt:
   encryptor:
     password: 123456

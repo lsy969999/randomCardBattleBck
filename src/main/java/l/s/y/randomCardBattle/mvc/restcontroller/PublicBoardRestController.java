@@ -1,4 +1,4 @@
-package l.s.y.randomCardBattle.adminmvc.restcontroller;
+package l.s.y.randomCardBattle.mvc.restcontroller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/admin/board")
-public class AdminBoardRestController {
-
+@RequestMapping("/api/v1/public/board")
+public class PublicBoardRestController {
     @GetMapping("/sample")
     public ResponseEntity<String> sample(){
         return ResponseEntity.ok("sample");
