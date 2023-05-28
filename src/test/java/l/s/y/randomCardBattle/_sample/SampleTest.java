@@ -1,10 +1,10 @@
 package l.s.y.randomCardBattle._sample;
 
 
-import l.s.y.randomCardBattle._sample.domain.entity.Sample;
-import l.s.y.randomCardBattle._sample.domain.entity.SampleEnum;
-import l.s.y.randomCardBattle._sample.mvc.repository.SampleRepository;
-import l.s.y.randomCardBattle._sample.mvc.repository.SampleRepositoryImpl;
+import l.sy.randomCardBattle._sample.domain.entity.Sample;
+import l.sy.randomCardBattle._sample.domain.entity.SampleEnum;
+import l.sy.randomCardBattle._sample.mvc.repository.SampleRepository;
+import l.sy.randomCardBattle._sample.mvc.repository.SampleRepositoryImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
