@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    l.s.y.randomCardBattle: DEBUG
+    l.sy.randomCardBattle: DEBUG
 
 spring:
   profiles:

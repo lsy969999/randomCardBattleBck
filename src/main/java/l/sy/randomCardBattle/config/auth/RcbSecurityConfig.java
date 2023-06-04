@@ -1,4 +1,4 @@
-package l.sy.randomCardBattle.config;
+package l.sy.randomCardBattle.config.auth;
 
 import l.sy.randomCardBattle.config.auth.JwtAuthConverter;
 import l.sy.randomCardBattle.config.auth.AccDeniedHandler;
@@ -30,6 +30,7 @@ public class RcbSecurityConfig {
                     c.disable();
                 })
                 .authorizeHttpRequests(r -> {
+                    r.requestMatchers("/api/test/**").permitAll();
                     r.requestMatchers("/api/v1/public/**").permitAll();
                     r.requestMatchers("/api/v1/admin/**").hasRole(ADMIN);
                     r.requestMatchers("/api/v1/user/**").hasAnyRole(ADMIN, USER);
